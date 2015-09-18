@@ -48,7 +48,7 @@ else if(!empty($_SESSION['session'])){
     <?php   require_once 'header.php';  ?> <!--include header part-->
     
     <div class="container-fluid row section">
-    <!------------------------Start Sidebar----------------------->
+    <!--tart Sidebar-->
         <div class ="col-md-3 sidebar">
              <ul class="nav nav-pills nav-stacked">
                  <li role="presentation"><a href="admin.php">Dashboard
@@ -62,8 +62,8 @@ else if(!empty($_SESSION['session'])){
                  
             </ul>           
         </div>
-        <!------------------------end  Sidebar ----------------------->
-        <!------------------------start Content----------------------->
+        <!--end  Sidebar -->
+        <!---start Content-->
         <div class="col-md-9 content">
 
                         <!---checking if invoice no. is right or wrong---->
@@ -119,7 +119,7 @@ else if(!empty($_SESSION['session'])){
                     <th>Date</th>
                   </tr>
                 </thead>
-                <tbody id=tables>
+                <tbody id="tables">
                       <?php    
                         while($row = mysqli_fetch_assoc($result)) {
                             print '<tr>';
