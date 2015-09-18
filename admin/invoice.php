@@ -48,7 +48,7 @@ else if(!empty($_SESSION['session'])){
     <?php   require_once 'header.php';  ?> <!--include header part-->
     
     <div class="container-fluid row section">
-    <!------------------------Start Sidebar----------------------->
+    <!--Start Sidebar-->
         <div class ="col-md-3 sidebar">
              <ul class="nav nav-pills nav-stacked">
                  <li role="presentation"><a href="admin.php">Dashboard
@@ -62,11 +62,11 @@ else if(!empty($_SESSION['session'])){
                  
             </ul>           
         </div>
-        <!------------------------end  Sidebar ----------------------->
-        <!------------------------start Content----------------------->
+        <!--end  Sidebar --->
+        <!--- Start Content--->
         <div class="col-md-9 content">
 
-                        <!---checking if invoice no. is right or wrong---->
+                        <!--checking if invoice no. is right or wrong-->
             <?php 
                 if(isset($_SESSION['wrongIno']) && !empty($_SESSION['wrongIno']) ){
                     echo "<p style='color:red;text-align:left;font-size:19px;
@@ -150,9 +150,9 @@ else if(!empty($_SESSION['session'])){
               </ul>
         </nav>
             
-        </div><!------------------------end Content----------------------->
+        </div><!---end Content-->
     </div>
-     <!--------my script------>
+     <!--my script-->
     <script>
     $(document).ready(function(){
             $( ".pagination li:nth-child(1)" ).addClass("active");
